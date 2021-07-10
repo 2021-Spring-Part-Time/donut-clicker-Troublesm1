@@ -4,21 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Donut Maker</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>DonutClicker Game</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Mmmmmm donuts......</h1>
-      <section></section>
-    </div>
     <div>
       <nav>
         <a href="#Fred">Fred The Baker Baking Company</a>
         <a href="https://orteil.dashnet.org/cookieclicker">Cookie Clicker</a>
         <a href="#Contact Us">Contact Us</a>
       </nav>
+    <div class = "sectionLeft">
+      <div class="scoreContainer unselectable">
+        <span id ="score">o</span> Donuts<br>
+        <span id="scorepersecond">0</span> Donuts per second
+      </div>
+      <br>
+
+      <div class="donutContainer">
+        <img src="donut.jpg" alt="Picture of Donut" height="256px" width="300px" onclick = "addToScore(clickAmount)">
+      </div>
+
+      <div class="sectionFooter">
+        <h5>Donut Maker</h5>
+      </div>
     </div>
-    <script src="./app.js"></script>
+
+    <div class="sectionRight">
+        <table class="shopButton unselectable" onclick="buyAutoClicker()">
+          <tr>
+            <td id ="image"><img src="clicker.jpg"></td>
+            <td id ="nameAndCost">
+              <p>Auto Clicker</p>
+              <p><span id="autoclickercost">100</span> donuts</p>
+              </td>
+              <td id="amount"><span id="autoclickers">0</span></td>
+          </tr>
+        </table>
+
+        <table class="shopButton unselectable" onclick="buyMultiplier()">
+          <tr>
+            <td id ="image"><img src="multiplier.jpg"></td>
+            <td id ="nameAndCost">
+              <p>Multiplier</p>
+              <p><span id="multipliercost">10</span> donuts</p>
+              </td>
+              <td id="amount"><span id="multipliers">0</span></td>
+          </tr>
+        </table>
+    </div>
+        <script src="app.js"></script>
+    
   </body>
 </html>
+
+
