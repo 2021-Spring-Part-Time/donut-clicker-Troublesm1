@@ -1,0 +1,95 @@
+* {
+  font-family: sans-serif;
+  line-height: 1.618em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.sectionLeft {
+  float: left;
+  text-align: center;
+  width: 80%;
+}
+.sectionRight {
+  float: right;
+  width: 20%;
+}
+.scoreContainer {
+  background-color: rgb(238, 238, 238, 0.6);
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.donutContainer img {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.donutContainer img:hover {
+  transform: scale(1.1);
+}
+.donutContainer img:active {
+  transform: scale(0.99);
+}
+
+.shopButton {
+  background-color: gray;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+.shopButton:hover {
+  background-color: #c7c7c7;
+  transition: all 0.2s ease-in-out;
+}
+.shopButton #image {
+  width: 25%;
+}
+.shopButton img {
+  height: 64px;
+  width: 64px;
+}
+.shopButton #nameAndCost p {
+  margin: 0px;
+  width: 60%;
+}
+.shopButton #nameAndCost p:first-of-type {
+  font-size: 20px;
+}
+.shopButton #amount {
+  font-size: 48px;
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 15%;
+}
+.sectionFooter {
+  margin-top: 20%;
+}
+.unselectable {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
+  grid-column-gap: 1em;
+}
+
+nav {
+  background: #ccc;
+  padding: 1em;
+}
+footer {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-color: #555;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
